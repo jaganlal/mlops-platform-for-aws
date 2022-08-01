@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "simple_model_demo"
+version = "0.1.0"
+description = ""
+authors = ["jaganlal@gmail.com <jaganlal@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4.3"
+lightgbm = "^3.3.2"
+matplotlib = "^3.5.2"
+mlflow = "^1.27.0"
+scikit-learn = "^1.1.1"
+boto3 = "1.24.41"
+fastapi = "^0.79.0"
+uvicorn = "^0.18.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+train = "src.simple_model_demo.training.train:main"
+serve = "src.simple_model_demo.serving.serve:main"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
