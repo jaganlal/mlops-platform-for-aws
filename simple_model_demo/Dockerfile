@@ -17,4 +17,4 @@ RUN poetry install --no-interaction --no-ansi --no-dev
 COPY . .
 
 WORKDIR /simple_model_demo/src
-ENTRYPOINT uvicorn simple_model_demo.serving.__main__:app --host 0.0.0.0 --port $LISTEN_PORT --workers 2
+ENTRYPOINT uvicorn simple_model_demo.serving.serve:app --host 0.0.0.0 --port $LISTEN_PORT --workers 2

@@ -1,0 +1,3 @@
+encryptionsalt: v1:ZOcSq1eNp0E=:v1:PmmyuZ1bLPM9jZ3t:FLthpNke51VKshEBf0zOW7zxLQ9YSw==
+config:
+  aws:region: pulumi config set aws:region us-west-2

@@ -1,0 +1,13 @@
+{
+    "name": "simple_model_demo_iac",
+    "devDependencies": {
+        "@types/node": "^14"
+    },
+    "dependencies": {
+        "@pulumi/aws": "^5.0.0",
+        "@pulumi/awsx": "^0.40.0",
+        "@pulumi/kubernetes": "^3.20.2",
+        "@pulumi/kubernetesx": "^0.1.6",
+        "@pulumi/pulumi": "^3.0.0"
+    }
+}
